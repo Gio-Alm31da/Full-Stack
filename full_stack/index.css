@@ -1,0 +1,154 @@
+/* Cebeçalho */
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: aliceblue;
+
+}
+
+.navbar-brand img{
+    display: flex;
+    transition: 0.3s;
+}
+
+@media (max-width: 574px){
+  .navbar-brand img{
+    height: 100px;
+}
+}
+
+.nav-link {
+    color: #f0f8ff;
+    margin: 2px;
+    text-align: center;
+}
+
+.nav-link {
+    color: aliceblue
+}
+
+.nav-link:hover {
+    color: hotpink;
+}
+
+.nav-link:active {
+    color: coral;
+}
+
+
+/*Corpo*/
+
+body,html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.principal {
+    flex: 1;
+}
+
+.h1 {
+    margin: 20px;
+}
+
+.h2 {
+    margin: 20px;
+}
+
+.p {
+    margin: 20px;
+}
+
+/*Cards*/
+
+.cartao {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    gap: 20px; 
+}
+
+.card {
+    width: 200px; 
+    height: 450px; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ddd; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+}
+
+/*Carrossel*/
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .slides .slide {
+    display: none;
+  }
+
+  .slide img {
+    width: 100%;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+
+
+
+/*Formulário*/
+.card {
+    display: flex;
+    margin-left: 20px;
+    border: 1px solid black;
+    width: 420px;
+    justify-items: center;
+}
+
+.card-header {
+    background-color: pink;
+}
